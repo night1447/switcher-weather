@@ -15,7 +15,7 @@ body {
     display: flex;
     justify-content: center;
     background: rgb(194 206 219);
-    background: linear-gradient(205deg, rgb(238 233 245) 0%, rgb(30 34 42) 100%);
+    background: linear-gradient(205deg, rgb(245, 241, 233) 0%, rgb(30 34 42) 100%);
     margin: 0;
     font-family: 'poppins', sans-serif;
 }
@@ -507,7 +507,7 @@ body {
 }
 
 .loading-bar > div {
-    --color-1: rgba(152, 243, 248, 0.9);
+    --color-1: rgba(187, 152, 248, 0.9);
     --color-2: rgba(0, 0, 0, 0.7);
     background: var(--color-1);
     width: 21.9%;
@@ -655,7 +655,7 @@ body {
     opacity: 1;
     transition: all 0.5s ease-in-out;
     /* fill:rgba(152, 243, 248,0.9); */
-    filter: drop-shadow(0px 0px 6px rgba(152, 243, 248, 1));
+    filter: drop-shadow(0px 0px 6px rgba(187, 152, 248, 0.9));
 }
 
 .left-modal {
@@ -730,7 +730,7 @@ body {
     top: 0;
     bottom: 0;
     margin: auto;
-    border: 2px solid rgba(152, 243, 248, 0.6);
+    border: 2px solid rgba(187, 152, 248, 0.6);
     box-shadow: 0px 0px 4px 2px rgba(152, 243, 248, 0.1);
     transition: all 0.1s ease-in-out;
 }
@@ -747,21 +747,21 @@ body {
     top: 30%;
     bottom: 0%;
     margin: auto;
-    background: rgba(152, 243, 248, 0.5);
-    box-shadow: 0px 0px 4px 2px rgba(152, 243, 248, 0.2),
+    background: rgba(187, 152, 248, 0.5);
+    box-shadow: 0px 0px 4px 2px rgba(187, 152, 248, 0.2),
     0px 0px 0px 3px rgba(19, 21, 26, 1),
     0px 0px 4px 3px rgba(19, 21, 26, 0.5);
     transition: all 0.1s ease-in-out;
 }
 
 .power-on .inner-power::before {
-    border: 2px solid rgba(152, 243, 248, 1);
-    box-shadow: 0px 0px 4px 2px rgba(152, 243, 248, 0.5);
+    border: 2px solid rgba(187, 152, 248, 1);
+    box-shadow: 0px 0px 4px 2px rgba(187, 152, 248, 0.5);
 }
 
 .power-on .inner-power::after {
-    background: rgba(152, 243, 248, 1);
-    box-shadow: 0px 0px 4px 2px rgba(152, 243, 248, 0.7),
+    background: rgba(187, 152, 248, 1);
+    box-shadow: 0px 0px 4px 2px rgba(187, 152, 248, 0.7),
     0px 0px 0px 4px rgba(19, 21, 26, 1),
     0px 0px 0px 5px rgba(19, 21, 26, 0.5);
 }
@@ -823,8 +823,8 @@ body {
 .left-btn-3 svg * {
     opacity: 0.07;
     transition: all 0.5s ease-in-out;
-    fill: rgba(152, 243, 248, 0.7) !important;
-    filter: drop-shadow(0px 0px 4px rgba(152, 243, 248, 0.1));
+    fill: rgba(187, 152, 248, 0.7) !important;
+    filter: drop-shadow(0px 0px 4px rgba(187, 152, 248, 0.1));
 }
 
 .power-on .left-btn-1 svg *,
@@ -838,7 +838,7 @@ body {
 .power-on .active.left-btn-3 svg * {
     opacity: 1;
     transition: all 0.5s ease-in-out;
-    filter: drop-shadow(0px 0px 6px rgba(152, 243, 248, 1));
+    filter: drop-shadow(0px 0px 6px rgba(187, 152, 248, 1));
 }
 
 .right-modal {
@@ -962,8 +962,8 @@ g#rocket {
 }
 
 g#rocket #thrusterflame {
-    fill: rgb(154, 244, 250) !important;
-    filter: drop-shadow(0 10px 3px rgb(11, 223, 238));
+    fill: rgba(187, 152, 248, 0.9) !important;
+    filter: drop-shadow(0 10px 3px rgba(187, 152, 248, 0.9));
 }
 
 @keyframes rocketAnimation {

@@ -133,7 +133,7 @@ for (let i = 0; i < 360; i += STEP) {
     const color = i % (2 * STEP) === 0 ? FIRST_COLOR : SECOND_COLOR;
     gradient += color + ' ' + i + 'deg, ';
 }
-gradient = gradient.slice(0, -2) + '), rgb(85 93 108)';
+gradient = gradient.slice(0, -2) + '), rgba(187, 152, 248, 0.9)';
 
 rotateDiv.style.background = gradient;
 
