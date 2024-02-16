@@ -11,7 +11,7 @@ class Helper {
     }
 
     static clickTheButton() {
-        const audio = new Audio("./button.mp3");
+        const audio = new Audio("./sounds/button.mp3");
         audio.play();
         setTimeout(() => {
             audio.pause()
@@ -171,7 +171,7 @@ powerButton.addEventListener("click", () => {
 rocketButton.addEventListener("click", function () {
     if (!this.classList.contains('active')) {
         Helper.clickTheButton();
-        const audio = new Audio("./rocket.mp3");
+        const audio = new Audio("./sounds/rocket.mp3");
         audio.play();
         document.querySelector('g#rocket').style.animation = 'rocketAnimation 8s ease-in';
         this.classList.toggle('active');
@@ -185,7 +185,7 @@ rocketButton.addEventListener("click", function () {
 monsterButton.addEventListener("click", function () {
     if (!this.classList.contains('active')) {
         Helper.clickTheButton();
-        const audio = new Audio("./monster.mp3");
+        const audio = new Audio("./sounds/monster.mp3");
         audio.play();
         audio.loop = true;
 
@@ -210,7 +210,7 @@ monsterButton.addEventListener("click", function () {
 planeButton.addEventListener("click", function () {
     if (!this.classList.contains('active')) {
         Helper.clickTheButton();
-        const audio = new Audio("./plane.mp3");
+        const audio = new Audio("./sounds/plane.mp3");
         audio.play();
         document.querySelector('g#biplane').style.animation = 'biplaneAnimation 12s linear';
         this.classList.toggle('active');
