@@ -70,34 +70,35 @@ const changeWeather = (angle, item) => {
     let temp = document.querySelector('.temp');
     const mountains = document.querySelector("#mountains");
     const sixthItem = item.closest(".sixths") ?? item;
-    clickRotateDiv.querySelector(".sixths.active").classList.remove("active");
+    clickRotateDiv.querySelector(".sixths.active")?.classList.remove("active");
     sixthItem.classList.add('active');
+    mountains.removeAttribute("class");
     switch (angle / 60) {
         case 0:
-            changeTemperature(temp, 34);
             mountains.classList.remove("snow", "clouds");
+            changeTemperature(temp, 34);
             break;
         case 1:
-            changeTemperature(temp, 27);
             mountains.classList.add("sunset");
+            changeTemperature(temp, 27);
             break;
         case 2:
-            changeTemperature(temp, 14);
             mountains.classList.remove("sunset");
             mountains.classList.add("moon");
+            changeTemperature(temp, 14);
             break;
         case 3:
-            changeTemperature(temp, 16);
             mountains.classList.add("clouds");
+            changeTemperature(temp, 16);
             break;
         case 4:
-            changeTemperature(temp, 8);
             mountains.classList.add("storm");
+            changeTemperature(temp, 8);
             break;
         case 5:
-            changeTemperature(temp, -4);
             mountains.classList.remove("moon", "storm");
             mountains.classList.add("snow");
+            changeTemperature(temp, -4);
             break;
     }
 
@@ -111,6 +112,7 @@ const changeWeather = (angle, item) => {
 const changeActiveWeatherHandler = (e) => {
     const item = e.target;
     let id = "";
+    if (!item) return;
     if (item.tagName === "DIV") {
         id = item.querySelector("svg").getAttribute("id");
     } else {
